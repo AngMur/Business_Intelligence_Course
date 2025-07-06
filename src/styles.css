@@ -6,6 +6,7 @@
     --dark: #34495e;
     --success: #7fe0a8;
     --warning: #f39c12;
+    --background:#f9f5f5;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f5f7fa;
+    background-color: #ffffff;
 }
 
 .container {
@@ -167,7 +168,7 @@ body {
 
 /* Content sections */
 .module {
-    background-color: white;
+    background-color: var(--background);
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 25px;
@@ -313,7 +314,204 @@ body {
     border-radius: 4px;
     font-size: 0.8rem;
     margin-left: 15px;
-}
+}   
+
+.more-information-btn a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: var(--light);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid var(--secondary);
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .more-information-btn a:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  
+  /* Estilos base para bloques de código */
+  .code-container {
+    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 25px 0;
+    overflow-x: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-left: 4px solid #6272a4;
+  }
+
+  /* Etiqueta superior */
+  .code-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: #6272a4;
+    color: white;
+    padding: 3px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  /* Estilos para bloques de código en línea */
+  code.inline-code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    background-color: #f0f0f0;
+    color: #d63384;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid #e0e0e0;
+  }
+
+  /* Estilos para bloques de código multilínea */
+  code.block-code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    display: block;
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 16px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 12px 0;
+    overflow-x: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    white-space: pre;
+  }
+
+  /* Resaltado de sintaxis para SQL */
+  .sql-keyword { color: #ff79c6; }
+  .sql-string { color: #f1fa8c; }
+  .sql-table { color: #50fa7b; }
+  .sql-column { color: #8be9fd; }
+
+  /* Resaltado de sintaxis para Python */
+  .py-keyword { color: #ff79c6; }
+  .py-function { color: #50fa7b; }
+  .py-string { color: #f1fa8c; }
+  .py-module { color: #8be9fd; }
+
+
+  .process-list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    counter-reset: process-counter;
+    list-style: none;
+    background-color: #f9f5f5; /* Fondo suave que combina con los colores primarios */
+  }
+
+  .process-list li {
+    position: relative;
+    padding: 25px 25px 25px 80px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--primary);
+  }
+
+  .process-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    border-left-color: var(--accent);
+  }
+
+  .process-list li::before {
+    counter-increment: process-counter;
+    content: counter(process-counter);
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .process-list li strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .process-list li p {
+    margin: 8px 0;
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  .process-list li br + a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: var(--light);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid var(--secondary);
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .process-list li br + a:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  /* Colores alternados para los items */
+  .process-list li:nth-child(odd) {
+    border-left-color: var(--secondary);
+  }
+
+  .process-list li:nth-child(odd)::before {
+    background-color: var(--secondary);
+  }
+
+  /* Estilo para el hover en items impares */
+  .process-list li:nth-child(odd):hover {
+    border-left-color: var(--accent);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .process-list li {
+      padding: 20px 20px 20px 70px;
+    }
+    
+    .process-list li::before {
+      left: 15px;
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  }
 
 /* Responsive */
 @media (max-width: 768px) {
