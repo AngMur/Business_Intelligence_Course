@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Procesos | Empresa XD</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Business Intelligence</h2>
+                <small>Curso de capacitacion</small>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-text">
+                    <span>Progreso del curso</span>
+                    <span>35%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%;"></div>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-group">
+                    <div class="nav-group-title">Módulos del curso</div>
+                    <a href="#" class="nav-link active">
+                        <span class="icon">▶</span>
+                        <span>1. Proceso de ventas</span>
+                        <span class="status">En progreso</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="icon">▶</span>
+                        <span>2. Atención al cliente</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="icon">▶</span>
+                        <span>3. Onboarding</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="icon">▶</span>
+                        <span>4. Gestión de proyectos</span>
+                    </a>
+                </div>
+                
+                <div class="nav-group">
+                    <div class="nav-group-title">Recursos adicionales</div>
+                    <a href="#" class="nav-link">
+                        <span class="icon">📚</span>
+                        <span>Manual de procesos</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="icon">📋</span>
+                        <span>Formatos descargables</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <span class="icon">🎓</span>
+                        <span>Certificación</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="page-title">
+                    <h1>Proceso de ventas</h1>
+                    <div class="breadcrumb">Curso / Módulo 1 de 4</div>
+                </div>
+                <div class="user-menu">
+                    <span>Juan Pérez</span>
+                    <div class="user-avatar">JP</div>
+                </div>
+            </div>
+            
+            <div class="module">
+                <div class="module-header">
+                    <h2 class="module-title">Lección 1: Introducción</h2>
+                    <span class="module-badge">Nuevo</span>
+                </div>
+                
+                <div class="content-text">
+                    <h3>¿Quién es Grupo Urbania?</h3>
+                    <p>Una firma inmobiliaria mexicana, fundada en 1992.</p>
+                    <p>Se dedican a construir proyectos principalmente residenciales: departamentos y algunas casas. Ofrecen preventa de proyectos en construcción y estos tienen amenidades como ludoteca, roof garden, vigilancia, gimnasio, fondos de mantenimiento, estacionamientos, entre otros.</p>
+                    <p>Grupo Urbania cuenta con varias <strong>empresas constructoras</strong> las cuales se encargan de la mano de obra para la creación de edificios completos a los que denominamos str.</p>
+                </div>
+                
+                <div class="video-container">
+                    <!-- Reemplazar con video real -->
+                     <iframe width="560" height="315" src="https://www.youtube.com/embed/KzJt1zFq1jA?si=i1oO-mg3yJEiLCDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!-- <iframe src="https://youtu.be/a6ENZisQqto?si=xT6esDsKg0eUrRtS" frameborder="0" allowfullscreen></iframe> -->
+                </div>
+                
+                <div class="quiz-container">
+                    <h3>Cuestionario de comprensión</h3>
+                    <p>Responde las siguientes preguntas para verificar tu comprensión del tema.</p>
+                    
+                    <div class="quiz-question">
+                        <h4>1. ¿Cuál de las siguientes NO es una fuente común de generación de leads?</h4>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1"> Marketing digital (redes sociales, SEO, etc.)
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1"> Referencias de clientes existentes
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1"> Facturación a clientes
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1"> Participación en eventos del sector
+                        </label>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>2. ¿Qué información mínima debemos registrar de un lead en el CRM?</h4>
+                        <label class="quiz-option">
+                            <input type="checkbox"> Nombre y apellidos
+                        </label>
+                        <label class="quiz-option">
+                            <input type="checkbox"> Datos de contacto (email/teléfono)
+                        </label>
+                        <label class="quiz-option">
+                            <input type="checkbox"> Empresa y cargo
+                        </label>
+                        <label class="quiz-option">
+                            <input type="checkbox"> Todos los datos fiscales completos
+                        </label>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>3. Relaciona cada tipo de lead con su descripción:</h4>
+                        <p>Aquí iría un ejercicio de arrastrar y soltar o relacionar columnas</p>
+                    </div>
+                    
+                    <button class="btn btn-accent">Enviar respuestas</button>
+                </div>
+                
+                <div class="actions">
+                    <button class="btn-outline">← Lección anterior</button>
+                    <button class="btn">Marcar como completado</button>
+                    <button class="btn">Siguiente lección →</button>
+                </div>
+            </div>
+            
+            <div class="module">
+                <div class="module-header">
+                    <h2 class="module-title">Lección 2: Calificación y seguimiento</h2>
+                    <span class="completed-badge">Completado</span>
+                </div>
+                
+                <div class="content-text">
+                    <p>Una vez captado el lead, es esencial calificarlo para determinar su potencial como cliente y priorizar los esfuerzos comerciales.</p>
+                </div>
+                
+                <div class="video-placeholder">
+                    [Video: Técnicas de calificación de leads]
+                </div>
+                
+                <div class="quiz-container">
+                    <h3>Actividad práctica</h3>
+                    <p>Escucha la siguiente llamada de calificación y responde:</p>
+                    <audio controls style="width: 100%; margin: 15px 0;">
+                        <source src="llamada-ejemplo.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    
+                    <div class="quiz-question">
+                        <h4>Según lo escuchado, ¿cómo calificarías a este lead?</h4>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4"> A - Alto potencial
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4"> B - Potencial medio
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4"> C - Bajo potencial
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4"> D - Descartar
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module">
+                <div class="module-header">
+                    <h2 class="module-title">Lección 3: Cierre de venta</h2>
+                </div>
+                <p>Este módulo se desbloqueará al completar las lecciones anteriores.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
