@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Procesos | Empresa XD</title>
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/css/main_content/styles.css">
+    <link rel="stylesheet" href="./src/css/forms/relationalColumns.css">
 </head>
 <body>
     <div class="container">
@@ -88,7 +89,7 @@
                     <h3>¿Quién es Grupo Urbania?</h3>
                     <p>Una firma inmobiliaria mexicana, fundada en 1992.</p>
                     <p>Se dedican a construir proyectos principalmente residenciales: departamentos y algunas casas. Ofrecen preventa de proyectos en construcción y estos tienen amenidades como ludoteca, roof garden, vigilancia, gimnasio, fondos de mantenimiento, estacionamientos, entre otros.</p>
-                    <p>Grupo Urbania cuenta con varias <strong>empresas constructoras</strong> las cuales se encargan de la mano de obra para la creación de edificios completos a los que denominamos <strong>desarrollos</strong>.</p>
+                    <p>Grupo Urbania cuenta con varias <strong>empresas desarrolladoras</strong> las cuales se encargan de la mano de obra para la creación de edificios completos a los que denominamos <strong>desarrollos</strong>.</p>
                     <p>Un ejemplo de desarrollo es Tokio 616.</p>
                 </div>
                 
@@ -110,7 +111,7 @@
                         </li>
                         <li>
                             <strong>Diseño</strong><br>
-                            El equipo de arquitectos conceptualiza el proyecto, planeando amenidades, layouts y bienestar para los futuros residentes.
+                            El equipo de arquitectos conceptualiza el proyecto planeando, amenidades, layouts y bienestar para los futuros residentes.
                         </li>
                         <li>
                             <strong>Permisología</strong><br>
@@ -134,6 +135,21 @@
 
                         </li>
                     </ol>
+
+                    <h2>¿Cómo funciona el proceso de construcción en Urbania?</h2>
+                    <p>
+                        Dentro de Urbania existen varias <strong>empresas desarrolladoras</strong> que se encargan de construir los proyectos inmobiliarios. A estos proyectos se les llama <strong>Desarrollos</strong>, y son básicamente los <strong>edificios que contienen varios departamentos</strong> que luego se ofrecen a los clientes.
+                    </p>
+                    <p>
+                        Para construir un desarrollo, es necesario colaborar con dos tipos de aliados importantes:
+                    </p>
+                    <ul>
+                        <li><strong>Contratistas:</strong> aportan la mano de obra (albañiles, ingenieros, etc.).</li>
+                        <li><strong>Proveedores:</strong> suministran los materiales e insumos necesarios para la construcción.</li>
+                    </ul>
+                    <p>
+                        Todos los pagos y compras relacionados con un desarrollo se gestionan a través de un <strong>Centro de Costo</strong>. Este centro es como una cuenta asignada a cada desarrollo y su área específica, lo que permite <strong>realizar compras, facturarlas y pagarlas de forma organizada</strong>.
+                    </p>
                 </div>
                 
 
@@ -141,42 +157,28 @@
                 <div class="quiz-container">
                     <h3>Cuestionario de comprensión</h3>
                     <p>Responde las siguientes preguntas para verificar tu comprensión del tema.</p>
-                    
+                                    
                     <div class="quiz-question">
-                        <h4>1. ¿Cuál de las siguientes NO es una fuente común de generación de leads?</h4>
-                        <label class="quiz-option">
-                            <input type="radio" name="q1"> Marketing digital (redes sociales, SEO, etc.)
-                        </label>
-                        <label class="quiz-option">
-                            <input type="radio" name="q1"> Referencias de clientes existentes
-                        </label>
-                        <label class="quiz-option">
-                            <input type="radio" name="q1"> Facturación a clientes
-                        </label>
-                        <label class="quiz-option">
-                            <input type="radio" name="q1"> Participación en eventos del sector
-                        </label>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>2. ¿Qué información mínima debemos registrar de un lead en el CRM?</h4>
-                        <label class="quiz-option">
-                            <input type="checkbox"> Nombre y apellidos
-                        </label>
-                        <label class="quiz-option">
-                            <input type="checkbox"> Datos de contacto (email/teléfono)
-                        </label>
-                        <label class="quiz-option">
-                            <input type="checkbox"> Empresa y cargo
-                        </label>
-                        <label class="quiz-option">
-                            <input type="checkbox"> Todos los datos fiscales completos
-                        </label>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>3. Relaciona cada tipo de lead con su descripción:</h4>
-                        <p>Aquí iría un ejercicio de arrastrar y soltar o relacionar columnas</p>
+                        <h4>1. Relaciona cada entidad con su descripción:</h4>
+                            <div class="relational-container">
+                                <div class="relational-column" id="columna-origen">
+                                    <div class="item" draggable="true" data-match="empresa">Empresa</div>
+                                    <div class="item" draggable="true" data-match="desarrollo">Desarrollo</div>
+                                    <div class="item" draggable="true" data-match="proveedor">Proveedor</div>
+                                    <div class="item" draggable="true" data-match="centro-costo">Centro de Costo</div>
+                                </div>
+
+                                <div class="relational-column" id="columna-destino">
+                                        <div class="target" data-match="proveedor">Abastecen de material u otros insumos necesarios para Urbania.</div>
+                                        <div class="target" data-match="desarrollo">Edificios los cuales contienen multiples departamentos en construcción o listos para ofertar.</div>
+                                        <div class="target" data-match="centro-costo">Es la cuenta a la que se le atribuyen las compras y pagos de un área que realiza una funcion específica para la gestión de un desarrollo.</div>
+                                        <div class="target" data-match="empresa">Se encargan de llevar desarrollar proyectos, promover o dar mano de obra a estos.</div>
+                                </div>
+                                <p id="feedback"></p>
+                            </div>
+                            
+
+                            
                     </div>
                     
                     <button class="btn btn-accent">Enviar respuestas</button>
@@ -296,5 +298,7 @@
             </div>
         </div>
     </div>
+
+    <script src="./src/js/relacionalColumns.js"></script>
 </body>
 </html>

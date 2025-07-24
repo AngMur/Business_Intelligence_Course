@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio de Arrastrar y Soltar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Empareja cada concepto con su definición</h1>
+  <div class="container">
+    <!-- Columna de elementos arrastrables -->
+    <div class="relational-column" id="columna-origen">
+      <div class="item" draggable="true" data-match="html">HTML</div>
+      <div class="item" draggable="true" data-match="css">CSS</div>
+      <div class="item" draggable="true" data-match="js">JavaScript</div>
+    </div>
+
+    <!-- Columna de objetivos -->
+    <div class="relational-column" id="columna-destino">
+      <div class="target" data-match="css">Estilos y diseño</div>
+      <div class="target" data-match="js">Interactividad</div>
+      <div class="target" data-match="html">Estructura web</div>
+    </div>
+  </div>
+
+  <p id="feedback"></p>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curso Interactivo</title>
+  <style>
+    body { font-family: sans-serif; display: flex; }
+    #menu { width: 200px; background: #f0f0f0; padding: 10px; }
+    #menu button { display: block; margin: 5px 0; width: 100%; }
+    #contenido { padding: 20px; flex-grow: 1; }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <button onclick="cargarLeccion('1-1.html')">Lección 1</button>
+    <button onclick="cargarLeccion('leccion2.html')">Lección 2</button>
+    <button onclick="cargarLeccion('leccion3.html')">Lección 3</button>
+  </div>
+
+  <div id="contenido">
+    <h2>Bienvenido al curso</h2>
+    <p>Selecciona una lección del menú para comenzar.</p>
+  </div>
+
+  <script>
+    function cargarLeccion(nombreArchivo) {
+      fetch('./modulos/' + nombreArchivo)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('contenido').innerHTML = html;
+        })
+        .catch(error => {
+          document.getElementById('contenido').innerHTML = '<p>Error al cargar la lección.</p>';
+          console.error(error);
+        });
+}
+  </script>
+</body>
+</html>

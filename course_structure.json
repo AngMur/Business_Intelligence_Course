@@ -1,0 +1,19 @@
+{
+  "modulos": [
+    {
+      "id": 1,
+      "titulo": "Introducción",
+      "lecciones": [
+        { "id": "1-1", "titulo": "Introducción", "archivo": "1-1.html" },
+        { "id": "1-2", "titulo": "¿?", "archivo": "1-2.html" }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Módulo 2: Conceptos Avanzados",
+      "lecciones": [
+        { "id": "2-1", "titulo": "Lección 2.1", "archivo": "leccion-2-1.html" }
+      ]
+    }
+  ]
+}
